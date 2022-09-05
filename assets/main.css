@@ -47,7 +47,7 @@ header {
 
 
 section {
-    min-height:100vh;
+    /* min-height:100vh; */
     width:100%;
 }
 
@@ -56,8 +56,12 @@ section {
     font-size:8em;
     color:#2E5292;
 
-    background-color: firebrick;
     padding-top:calc(2 * 19.5px + 2.25vw + 2vh);
+
+    background-image: url('images/int-sec.svg');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    height:67vw;
 }
 
 .sec-exp {
