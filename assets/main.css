@@ -2,7 +2,7 @@ body {
     scroll-behavior:smooth;
     padding:0;
     margin:0;
-    background-image:  linear-gradient(to bottom right, black, purple);
+    background-image:  linear-gradient(to bottom right, black, #570057);
     scroll-behavior: smooth;
 }
 
@@ -88,7 +88,7 @@ section {
     padding-top:calc(2 * 19.5px + 2.25vw + 2vh);
 
     /* background-image: url('images/int-sec.svg'); */
-    /* background-image: linear-gradient(to bottom right, black, purple);
+    /* background-image: linear-gradient(to bottom right, black, #570057);
     background-repeat: no-repeat;
     background-origin: content-box; */
     height:100vh;
@@ -127,7 +127,7 @@ section {
 
 /* Track */
 /* ::-webkit-scrollbar-track {
-    background: purple; 
+    background: #570057; 
     width:0;
 }
 
