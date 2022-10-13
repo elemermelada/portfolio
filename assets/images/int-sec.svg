@@ -1,4 +1,4 @@
-<svg version="1.1" viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" transform="scale(-1, 1)" style="background-color:white">
+<svg version="1.1" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" transform="scale(-1, 1)" style="background-color:white">
   <defs>
     <clipPath id="cut-off-bottom">
       <polygon points="0,0, 0,100, 28.125,100, 56.25,0" />

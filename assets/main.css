@@ -2,6 +2,8 @@ body {
     scroll-behavior:smooth;
     padding:0;
     margin:0;
+    background-image:  linear-gradient(to bottom right, black, purple);
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -11,31 +13,62 @@ ul {
 
 li {
     display: inline;
+    margin-right:1vw;
 }
+
+a {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    color:white;
+}
+
+a::before {
+    position: absolute;
+    content: "";
+    width: 2em;
+    height: 3px;
+    top: calc(2em + 1vw - 1em + 5px);
+    /* left: 0; */
+    background: #2E5292;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 
 
 header {
     top: 0.25vw;
+    right: 0.25vw;
+    left: 0.25vw;
     position:fixed;
     align-items:center;
     display: flex;
 
-    width:100%;
+    /* width:100%; */
 
     color:707070;
-    background-color:#f8f8f8;
+    background-color:rgba(255, 255, 255, 0.05);
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 3px 3px 15px rgba(0,0,0,0.9);
+    /* border: blue 1px solid; */
+    /* box-shadow: 3px 3px 15px rgba(0,0,0,0.9); */
 }
 
 .header-container {
     margin:1vw;
     vertical-align: middle;
+    /* background-color:rgba(255, 255, 255, 0.3);
+    border-radius: 10px 10px 10px 10px; */
 }
 
 #header-title-container {
     font-family: 'Lato', sans-serif;
     font-size: 2em;
+    margin: 0.5vw;
     color:#2E5292;
 }
 
@@ -52,20 +85,25 @@ section {
 }
 
 .sec-int {
-    font-family: 'EB Garamond', serif;
-    font-size:8em;
-    color:#2E5292;
-
     padding-top:calc(2 * 19.5px + 2.25vw + 2vh);
 
-    background-image: url('images/int-sec.svg');
+    /* background-image: url('images/int-sec.svg'); */
+    /* background-image: linear-gradient(to bottom right, black, purple);
     background-repeat: no-repeat;
-    background-origin: content-box;
-    height:67vw;
+    background-origin: content-box; */
+    height:100vh;
+}
+
+.int-name {
+    font-family: 'Garamond', 'EB Garamond', serif;
+    color:#2E5292;
+    font-size:6em;
+    margin:2.5%;
 }
 
 .sec-exp {
-    background-color: aqua;
+    height:100vh;
+    background-color: black;
 }
 
 .sec-car {
@@ -75,3 +113,31 @@ section {
 .sec-pro {
     background-color: brown;
 }
+
+
+
+
+/* SCROLLBAR STUFF */
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+    background: purple; 
+    width:0;
+}
+
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+    background: #cccccc; 
+    border-radius: 10px;
+} */
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: white; 
+} */ 
